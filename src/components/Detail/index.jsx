@@ -7,7 +7,7 @@ const Detail = ({getData, item, getChoice, i}) => {
   const {id} = useParams();
 
   const fetchData = () => {
-    fetch(`https://raw.githubusercontent.com/Czechitas-React-podklady/superkviz-api/main/quiz/${id}.json`)
+    fetch(`https://raw.githubusercontent.com/LucieMusilova/superkviz-api/main/quiz/${id}.json`)
     .then(response => response.json())
     .then(data => {
       getData(data);
